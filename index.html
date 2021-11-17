@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giga Games</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="build/css/app.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="bg-negro header">
+        <div class="contenedor barra-negra">
+
+            <div class="busqueda">
+                <input type="text" placeholder="Busqueda" id="busqueda">
+                <input class="azul" type="submit" value="Buscar">
+            </div>
+            <div class="logo">
+                <a href="index.html"><img class="logotipo" loading="lazy" src="/build/img/logotipo.png" alt="Logotipo Giga Games"></a>
+            </div>
+
+            <div id="contenedor-menu">
+                <div id="hamburger">
+                    <button>
+                        <span class="top-line"></span>
+                        <span class="middle-line"></span>
+                        <span class="bottom-line"></span>
+                    </button>
+                </div>
+                <div class="cont-menu active" id="menu">
+                    <ul>
+                        <li> <a href="index.html">Inicio</a> </li>
+                        <li> <a href="iniciarSecion.html">Iniciar sesión / Registrarse</a> </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="navegacion-principal">
+                <nav class="enlaces">
+                    <a href="index.html" class="enlace">Inicio</a>
+                    <a href="iniciarSecion.html" class="enlace">Iniciar sesión / Registrarse</a>
+                </nav>
+
+                <div class="two columns u-pull-right">
+                    <ul class="no-margin centrar-texto">
+                        <li class="submenu no-margin">
+                            <img src="build/img/cart.png" id="img-carrito">
+                            <div id="carrito">
+        
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+        
+                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div> <!--? FIN BARRA NEGRA -->
+    </header> <!--? FIN BG-NEGRO -->
+
+    <!--? Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="build/img/slide.webp" alt="Call of Duty Vanguard">
+                <p class="slide-texto">Ya Disponible</p>
+            </div>
+
+            <div class="swiper-slide">
+                <p class="slide-texto">Juega Sin Limites</p>
+            </div>
+
+            <div class="swiper-slide"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <main class="contenedor seccion">
+        <h2 class="centrar-texto rosa">Mas Sobre Nosotros</h2>
+        <div class="iconos-nosotros">
+            <div class="icono">
+                <img src="build/img/icono1.svg" alt="Seguridad" loading="lazy">
+                <h3>Seguridad</h3>
+                <p>Todas las compras estan garantizadas, si no recibes tu juego te devolveremos todo tu dinero</p>
+            </div>
+            <!--? FIN DE ICONO -->
+    
+            <div class="icono">
+                <img src="build/img/icono2.svg" alt="Precio" loading="lazy">
+                <h3>Precio</h3>
+                <p>Tenemos los mejores precios del mercado, sin precios sorpresas ni comisiones ocultas</p>
+            </div>
+            <!--? FIN DE ICONO -->
+    
+            <div class="icono">
+                <img src="build/img/icono3.svg" alt="Rapidez" loading="lazy">
+                <h3>Rapidez</h3>
+                <p>Todos los juegos de nuestro catalogo son de entrega inmediata</p>
+            </div>
+            <!--? FIN DE ICONO -->
+        </div>
+    </main>
+
+    <section class="catalogo">
+        <h2 class="centrar-texto">Catalogo</h2>
+        <div class="productos" id="lista-cursos"></div>
+    </section>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <p class="rosa">Todos los Derechos Reservados &copy2021 Giga Games </p>
+        </div>
+    </footer>
+
+    <script src="build/js/bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+    </script>
+
+</body>
+</html>

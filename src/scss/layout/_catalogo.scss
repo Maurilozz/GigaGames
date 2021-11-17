@@ -1,0 +1,46 @@
+.catalogo {
+    padding: $sepmedia;
+    h2 {
+        color: $primario;
+    }
+}
+
+.productos {
+
+    @include tablet {
+        @include grid(2, 2rem)
+    }
+    @include desktop {
+        @include grid(3, 2rem)
+    }
+
+    .producto {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+            margin: 1rem 0 0;
+        }
+        img {
+            max-width: 30rem;
+            min-width: 30rem;
+        }
+        .producto-info {
+            min-width: 30rem;
+            max-width: 30rem;
+            background-color: $negro;
+            margin-bottom: 1rem;
+        }
+        .nombre-juego {
+            color: $primario;
+            font-weight: $bold;
+            font-size: 2.8rem;
+        }
+        .precio-juego {
+            color: $secundario;
+            font-size: 2.3rem;
+            padding-bottom: 2rem;
+        }
+    }
+}

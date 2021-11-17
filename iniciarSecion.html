@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giga Games</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="build/css/app.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="bg-negro header">
+        <div class="contenedor barra-negra">
+
+            <div class="busqueda">
+                <input type="text" placeholder="Busqueda" id="busqueda">
+                <input class="azul" type="submit" value="Buscar">
+            </div>
+            <div class="logo">
+                <a href="index.html"><img class="logotipo" loading="lazy" src="/build/img/logotipo.png"
+                        alt="Logotipo Giga Games"></a>
+            </div>
+
+            <div id="contenedor-menu">
+                <div id="hamburger">
+                    <button>
+                        <span class="top-line"></span>
+                        <span class="middle-line"></span>
+                        <span class="bottom-line"></span>
+                    </button>
+                </div>
+                <div class="cont-menu active" id="menu">
+                    <ul>
+                        <li> <a href="index.html">Inicio</a> </li>
+                        <li> <a href="iniciarSecion.html">Iniciar sesión / Registrarse</a> </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="navegacion-principal">
+                <nav class="enlaces">
+                    <a href="index.html" class="enlace">Inicio</a>
+                    <a href="iniciarSecion.html" class="enlace">Iniciar sesión / Registrarse</a>
+                </nav>
+            </div>
+
+        </div>  <!--? FIN BARRA NEGRA -->
+    </header> <!--? FIN BG-NEGRO -->
+        <nav class="tabs">
+            <button type="button" data-paso="1">Iniciar Sesión</button>
+            <button type="button" data-paso="2">Registrarse</button>
+        </nav>
+
+        <main  id="paso-1" class="contenedor seccion">
+            <h3 class="inicioSesion centrar-texto">Iniciar sesión</h3>
+        
+            <div class="contacto-bg"></div>
+        
+            <form class="formulario inicio-sesión">
+                <div class="campo">
+                    <input class="campo__field" id="email" type="email" placeholder="E-mail">
+                </div>
+                <div class="campo">
+                    <input class="campo__field" id="contrasena" type="password" placeholder="Contraseña">
+                </div>
+        
+                <div class="campo campo-submit">
+                    <input id="ingresar" type="submit" value="Ingresar" class="boton-rosa"
+                </div>
+            </form>
+        </main>
+        
+        <section id="paso-2" class="contenedor seccion">
+            <h3 class="inicioSesion centrar-texto">Registrarse</h3>
+        
+            <div class="contacto-bg"></div>
+        
+            <form class="formulario2">
+                <div class="campo">
+                    <input class="campo__field" id="rnombre" type="text" placeholder="Nombre">
+                </div>
+                <div class="campo">
+                    <input class="campo__field" id="remail" type="email" placeholder="E-mail">
+                </div>
+                <div class="campo">
+                    <input class="campo__field" id="rcontrasena" type="password" placeholder="Contraseña">
+                </div>
+                <div class="campo">
+                    <input class="campo__field" id="repetir_contrasena" type="password" placeholder="Repite tu Contraseña">
+                </div>
+        
+                <div class="campo campo-submit">
+                    <input type="submit" value="Registrarse" class="boton-rosa"
+                </div>
+            </form>
+        </section>
+    
+    <script src="build/js/bundle.min.js"></script>
+    </body>
+    
+    </html>

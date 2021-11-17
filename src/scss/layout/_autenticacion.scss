@@ -1,0 +1,47 @@
+.inicioSesion {
+    color: $primario;
+    margin: 3.5rem 0;
+}
+.formulario {
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+.campo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.campo-submit {
+    justify-content: center;
+}
+.campo__label {
+    display: inline;
+    min-width: 10rem;
+    text-align: right;
+    padding-right: 2rem;
+    color: $primario;
+}
+.campo__field {
+    border: 1px $grisClaro;
+}
+.campo__field--textarea {
+    height: 20rem;
+}
+
+.error {
+    background-color: rgb(185, 0, 0);
+    color: $blanco;
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    border-radius: 5rem;
+}
+.correcto {
+    background-color: rgb(74, 185, 0);
+    color: $blanco;
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    border-radius: 5rem;
+}

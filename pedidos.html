@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giga Games</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="build/css/app.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="bg-negro header">
+        <div class="contenedor barra-negra">
+
+            <div class="busqueda">
+                <input type="text" placeholder="Busqueda" id="busqueda">
+                <input class="azul" type="submit" value="Buscar">
+            </div>
+            <div class="logo">
+                <a href="index.html"><img class="logotipo" loading="lazy" src="/build/img/logotipo.png"
+                        alt="Logotipo Giga Games"></a>
+            </div>
+
+            <div id="contenedor-menu">
+                <div id="hamburger">
+                    <button>
+                        <span class="top-line"></span>
+                        <span class="middle-line"></span>
+                        <span class="bottom-line"></span>
+                    </button>
+                </div>
+                <div class="cont-menu active" id="menu">
+                    <ul>
+                        <li> <a href="index.html">Inicio</a> </li>
+                        <li> <a href="iniciarSecion.html">Iniciar sesión / Registrarse</a> </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="navegacion-principal">
+                <nav class="enlaces">
+                    <a href="index.html" class="enlace">Inicio</a>
+                    <a href="iniciarSecion.html" class="enlace">Iniciar sesión / Registrarse</a>
+                </nav>
+            </div>
+
+        </div>
+        <!--? FIN BARRA NEGRA -->
+    </header>
+    <!--? FIN BG-NEGRO -->
+
+    <main class="contenedor ui">
+        <nav class="menu">
+            <div class="imagen_perfil">
+                <img src="build/img/f608x342-17397_47120_0.webp" alt="Imagen de perfil">
+                <h4>!Hola¡ <span>admin</span></h4>
+            </div>
+            <ul class="ui_botones">
+                <li class="ui_boton">
+                    <button class=""><a href="micuenta.html">Mi Cuenta</a></button>
+                </li>
+
+                <li class="ui_boton">
+                    <button class="activo" ><a href="pedidos.html">Pedidos</a></button>
+                </li>
+
+                <li class="ui_boton">
+                    <button><a href="iniciarSecion.html">Salir</a></button>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="ui_contenido contenedor">
+            <div class="pedidos">
+                <div class="pedido">
+                    <img src="build/img/catalogo/Call of duty vanguard.webp" alt="Call of duty vanguard">
+                    <div class="info_pedido">
+                        <p class="nombre_pedido">Call of duty vanguard ultimate edition</p>
+                        <p class="fecha_pedido">16/11/2021</p>
+                        <p class="precio_pedido">$75</p>
+                    </div>
+                    <button>Autenticar</button>
+                </div> <!--? FIN DE PEDIDO -->
+
+                <div class="pedido">
+                    <img src="build/img/catalogo/Far cry 6 ultimate.webp" alt="Far Cry 6 ultimate">
+                    <div class="info_pedido">
+                        <p class="nombre_pedido">Far cry 6 ultimate edition</p>
+                        <p class="fecha_pedido">12/11/2021</p>
+                        <p class="precio_pedido">$75</p>
+                    </div>
+                    <button>Autenticar</button>
+                </div> <!--? FIN DE PEDIDO -->
+            </div>
+        </div>
+    </main>
+
+    <script src="build/js/bundle.min.js"></script>
+</body>
+
+</html>

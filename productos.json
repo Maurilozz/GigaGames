@@ -1,0 +1,43 @@
+{
+    "juegos": [
+        {
+            "imagen": "build/img/catalogo/Alan wake.webp", "nombre": "Alan Waker", "precio": 75, "id": 1
+        },
+        {
+            "imagen": "build/img/catalogo/battlefield 2042 ultimate.webp", "nombre": "BattleField 2042", "precio": 75, "id": 2
+        },
+        {
+            "imagen": "build/img/catalogo/Call of duty coldwar.webp", "nombre": "Call of Duty: ColdWar", "precio": 75, "id": 3
+        },
+        {
+            "imagen": "build/img/catalogo/Call of duty modern warfare.webp", "nombre": "Call of Duty: Modern Warfare", "precio": 75, "id": 4
+        },
+        {
+            "imagen": "build/img/catalogo/Call of duty vanguard.webp", "nombre": "Call of Duty: Vanguard", "precio": 75, "id": 5
+        },
+        {
+            "imagen": "build/img/catalogo/crash bandicoot 4.webp", "nombre": "Crash Bandicoot 4", "precio": 75, "id": 6
+        },
+        {
+            "imagen": "build/img/catalogo/cuphead_xbox_one_uk_.webp", "nombre": "Cuphead", "precio": 75, "id": 7
+        },
+        {
+            "imagen": "build/img/catalogo/Far cry 6 ultimate.webp", "nombre": "Far Cry 6", "precio": 75, "id": 8
+        },
+        {
+            "imagen": "build/img/catalogo/little nigmares.webp", "nombre": "Little Nightmares", "precio": 75, "id": 9
+        },
+        {
+            "imagen": "build/img/catalogo/little nigmares 2.webp", "nombre": "Little Nightmares 2", "precio": 75, "id": 10
+        },
+        {
+            "imagen": "build/img/catalogo/Mortal Kombat 11 ultimate.webp", "nombre": "Mortal Kombat 11", "precio": 75, "id": 11
+        },
+        {
+            "imagen": "build/img/catalogo/prision architect.webp", "nombre": "Prision Architect", "precio": 75, "id": 12
+        },
+        {
+            "imagen": "build/img/catalogo/Resident evil 6 deluxe.webp", "nombre": "Resident Evil 6", "precio": 75, "id": 13
+        }
+    ]
+}
